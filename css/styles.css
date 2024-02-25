@@ -1,0 +1,73 @@
+.main {
+    margin-top: 80px;
+}
+
+.main .main-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .main-imagenes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 90px;
+    gap: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main .main-imagenes img {
+    width: 700px;
+    height: 400px;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+}
+
+.historia .historia-contenedor {
+    margin-top: 100px;
+}
+
+.historia .historia-contenedor p {
+    margin-top: 70px;
+    margin-right: 300px;
+}
+
+.historia .historia-imagenes {
+    margin-left: 100px;
+}
+
+.historia .historia-imagenes img {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.destacados {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.net {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .main .main-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .main-imagenes img {
+        width: 400px;
+        height: 300px;
+    }
+}
